@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Page Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="js/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="css/base.css" type="text/css" />
+	<script src="js/jquery.mobile-1.4.5.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+
+	<style type="text/css" media="screen">
+		body{
+			font-family:Arial, Helvetica, sans-serif;
+		}
+
+		.clearfix:after{
+			content:'.';
+			display:block;
+			height:0;
+			clear:both;
+			visibility:hidden}
+		.header{
+			height:44px;
+			background: #28d2b6;
+			text-align:center;
+			font-size:18px;
+			line-height:44px;
+			font-weight:bold;
+			color:#fff;
+		}
+		
+		.chat,.buld{
+			text-align:center;
+			display:inline-block;
+			width:50%;
+			box-sizing: border-box;
+			height:160px;
+			background: #222028;
+			float:left;
+			font-size:16px;
+			font-weight:bold;
+		}
+		.chat img,.buld img{
+			margin-top:20px;
+			
+		}
+		.chat{
+			border-right: #000 solid  1px;
+			color:#25c9be;
+		}
+		.buld{
+			border-left: #000 solid  1px;
+			color:#f4378b;
+			text-decoration:none;
+		}
+		.device-data-title{
+			height:30px;
+			line-height:30px;
+			font-size:16px;
+			padding-left:30px;
+			background:#23c3c3;
+			font-weight:bold;
+		}
+		
+		ul{
+			list-style:none;
+		}
+		.device-data-wrap .item{
+			padding:20px;
+			height:40px;
+			line-height:40px;
+			color:#646367;
+			background: #222028;
+			border-bottom:1px solid #000;
+			
+		}
+		.device-data-wrap .item img{
+			width:40px;
+			vertical-align: middle;
+			margin-right:8px;
+		}
+		.device-data-wrap .item .des{
+			float:right;
+		}
+	</style>
+</head>
+<body>
+	<div class="header" data-rel="back" >
+		<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-icon-back ui-btn-icon-left ui-btn-icon-notext">Back</a>
+		 DeviceName
+	</div>
+	
+	<div class="content" >
+
+		<div class="clearfix">
+		   <span class="chat">
+		   		<img src="img/chat.png" alt="" />
+		   		<br />
+		   		<span>Chat</span>
+		   </span>
+		  <!--  <span class="buld" ></span> -->
+		   	<a href="./controller.html" class='buld'>
+		   		<img src="img/buld.png" alt="" />
+		   		<br />
+		   		<span>RGB Buld Controller</span>
+		   	</a>
+		   
+		</div>
+		
+		<div class="device-data">
+			<h3 class="device-data-title">Device data</h3>
+			<ul class="device-data-wrap">
+				<li class="item">
+					<img src="img/04devicename-temperature-120.png" alt="" />
+					
+					<span>Temparature</span>
+					<span class="des">18</span>
+				</li>
+				<li class="item">
+					<img src="img/04devicename-ADC-120.png" alt="" />
+					
+					<span>Humidity</span>
+					<span class="des">None</span>
+				</li>
+				<li class="item">
+					<img src="img/04devicename-ADC-120.png" alt="" />
+					
+					<span>Atmospheric pressure</span>
+					<span class="des">None</span>
+				</li>
+				<li class="item">
+					<img src="img/04devicename-wifi-120.png" alt="" />
+					<span>Proximity</span>
+					<span class="des">None</span>
+
+				</li>
+				<li class="item">
+					<img src="img/04devicename-dinaji-120.png" alt="" />
+					<span>Electric motor</span>
+					<span class="des">None</span>
+				</li>
+			</ul>
+		</div>
+		
+		
+	</div>
+</body>
+</html>
